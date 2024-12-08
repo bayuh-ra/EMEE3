@@ -40,3 +40,11 @@ The database uses a single table, `Employee`, with the following structure:
   - The `email` field ensures valid email addresses.
   - The `role` field is restricted to either **Manager** or **Cashier**.
 - The database is configured to use **SQLite** by default but can be switched to another database like PostgreSQL or MySQL with minimal configuration.
+
+
+---
+## Database Structure: 
+- Hannah Bea R. Alcaide
+- Job Aaron Pimente
+- Edward Anthony Quianzon
+- Isiah Gilmore Veneracion

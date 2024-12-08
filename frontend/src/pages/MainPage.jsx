@@ -55,12 +55,17 @@ const MainPage = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-4xl text-center font-bold mb-8 text-red-600">Employee Management System</h1>
-      <div className="flex space-x-8">
-        <div className="w-1/3">
+      {/* Banner */}
+      <div className="bg-gradient-to-r from-red-500 to-red-700 text-white text-center p-6 rounded-lg shadow-lg mb-6">
+        <h1 className="text-3xl font-extrabold tracking-tight">Employee Management System</h1>
+      </div>
+
+      <div className="flex justify-between space-x-4">
+        <div className="w-full md:w-1/3 p-4 bg-white rounded-lg shadow-lg">
           <EmployeeForm selectedEmployee={selectedEmployee} onSave={handleSave} />
         </div>
-        <div className="w-2/3">
+
+        <div className="w-full md:w-2/3 p-4 bg-white rounded-lg shadow-lg">
           <EmployeeList employees={employees} onEdit={handleEdit} onDelete={handleDelete} />
         </div>
       </div>
