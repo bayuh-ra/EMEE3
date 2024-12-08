@@ -21,8 +21,6 @@ The **Employee Management System (EMS)** is a web-based application designed to 
    - Includes Jest and Vitest for frontend testing.
 
 ---
-
-
 ## Database Structure
 
 The database uses a single table, `Employee`, with the following structure:
