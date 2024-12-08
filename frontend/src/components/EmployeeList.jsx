@@ -1,14 +1,15 @@
-import React, { useState } from 'react';  
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const EmployeeList = ({ employees, onEdit, onDelete }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [filterRole, setFilterRole] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filterRole, setFilterRole] = useState("");
 
   // Filter employees by search and role
   const filteredEmployees = employees.filter((employee) => {
     return (
-      (employee.username.toLowerCase().includes(searchQuery.toLowerCase()) || employee.name.toLowerCase().includes(searchQuery.toLowerCase())) &&
+      (employee.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        employee.name.toLowerCase().includes(searchQuery.toLowerCase())) &&
       (filterRole ? employee.role === filterRole : true)
     );
   });
@@ -40,7 +41,7 @@ const EmployeeList = ({ employees, onEdit, onDelete }) => {
       {/* Employee Table */}
       <table className="min-w-full table-auto">
         <thead>
-          <tr className="bg-purple-200">
+          <tr className="bg-red-100 text-lg font-semibold text-gray-700">
             <th className="px-4 py-2 text-left">Username</th>
             <th className="px-4 py-2 text-left">Name</th>
             <th className="px-4 py-2 text-left">Email</th>
